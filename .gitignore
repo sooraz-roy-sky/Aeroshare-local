@@ -1,0 +1,18 @@
+# AeroShare - Git Ignore Config
+
+# Ignore user shared files and active uploads
+shared/
+temp_uploads/
+
+# Ignore Python runtime files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore temporary debug logs
+delete_debug.txt
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
