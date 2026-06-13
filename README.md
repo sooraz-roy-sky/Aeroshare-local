@@ -28,19 +28,34 @@ It operates entirely on your local network (Wi-Fi/LAN) without relying on cloud 
 
 ## How to Run & Connect
 
-### 1. Run the Server
-* **Windows**: Open the folder and double-click **`Start-AeroShare.bat`**. This will start the server and automatically launch the local dashboard at `http://localhost:8080`.
-* **macOS / Linux / Terminal**: Open a terminal, navigate to the folder, and run:
-  ```bash
-  python server.py
-  ```
+You can host the AeroShare service from either a PC or a Mobile Device.
 
-### 2. Connect Your Phone
-1. Open the dashboard on your PC browser (`http://localhost:8080`).
-2. Scan the generated QR code displayed on your monitor using your mobile device's camera.
-3. *Alternatively*, type your PC's local network IP and port into your phone's browser address bar:
-   `http://<YOUR_PC_LOCAL_IP>:8080`
-4. Both devices are now connected. You can drag and drop or select files to transfer them instantly at local Wi-Fi speeds!
+### Method A: PC Host Setup (PC as Server)
+1. **Launch the Server**:
+   * **Windows**: Double-click **`Start-AeroShare.bat`**. This launches the server and opens your browser to the local console at `http://localhost:8080`.
+   * **macOS / Linux / Terminal**: Navigate to the directory and run:
+     ```bash
+     python server.py
+     ```
+2. **Connect Clients**:
+   * Open the dashboard on your PC browser (`http://localhost:8080`).
+   * Scan the displayed QR Code using your phone's camera, or manually type the URL into any client browser address bar:
+     `http://<YOUR_PC_LOCAL_IP>:8080`
+
+### Method B: Mobile Host Setup (Phone as Server)
+You can run the server directly on your mobile device, allowing other PCs, phones, or tablets to connect to it.
+1. **Android Setup**: Install **Termux** (via F-Droid), install python (`pkg install python`), copy the project files to your device, and run:
+   ```bash
+   python server.py
+   ```
+2. **iOS / iPhone Setup**: Install **a-Shell** from the App Store, place the project files in the a-Shell local documents folder, and run:
+   ```bash
+   python3 server.py
+   ```
+3. **Connect Clients**:
+   * The phone terminal will print your phone's local IP address (e.g. `http://<YOUR_MOBILE_IP>:8080`).
+   * Type this URL into the web browser of any PC or device connected to the same Wi-Fi network.
+   * *For full configuration details on mobile packages and storage copying, refer to the [mobile_setup.md](mobile_setup.md) guide.*
 
 ---
 
