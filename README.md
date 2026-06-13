@@ -63,3 +63,14 @@ You can run the server directly on your mobile device, allowing other PCs, phone
 * **Path Traversal Protection**: File inputs are parsed using `os.path.basename()` and characters like `..`, `/`, and `\` are stripped to prevent read/write leaks outside the shared folder.
 * **XSS Mitigation**: File names are safely injected into the DOM using `textContent` to neutralize script injection.
 * **Conflict Prevention**: Filename conflicts are automatically handled by appending suffixes (e.g. `file (1).txt`) instead of overwriting existing data.
+
+---
+
+## Developer & Contact
+
+Developed and maintained by:
+* **Developer**: **Suraj Kumar**
+* **Email**: [iamsooraz@gmail.com](mailto:iamsooraz@gmail.com)
+* **GitHub Profile**: [@sooraz-roy-sky](https://github.com/sooraz-roy-sky)
+* **Designation**: District Information Office, Purnea (NIC)
+* **Project Repository**: [AeroShare-local](https://github.com/sooraz-roy-sky/Aeroshare-local)
